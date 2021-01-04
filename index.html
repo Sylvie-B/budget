@@ -8,10 +8,90 @@
 </head>
 <body>
     <div id="container">
-        <div id="incomes"></div>
-        <div id="outlay"></div>
-        <div id="saving"></div>
-        <div id="result"></div>
+        <div id="part1">
+            <div class="part">
+                <p class="title">RECETTES</p>
+                <div id="moneyIncome">
+                    <div>
+                        <label for="salary">Salaire :</label>
+                        <input type="number" id="salary">
+                    </div>
+                    <div>
+                        <label for="aid">Aide :</label>
+                        <input type="number" id="aid">
+                    </div>
+                    <div>
+                        <label for="privateIncome">Rente :</label>
+                        <input type="number" id="privateIncome">
+                    </div>
+                    <div>
+                        <label for="otherIn">Autres :</label>
+                        <input type="number" id="otherIn">
+                    </div>
+                    <button id="addIncomes">valider</button>
+                </div>
+                <div class="total" id="totalIncomes"></div>
+            </div>
+            <div class="part">
+                <p class="title">DEPENSES</p>
+                <div id="fixed">
+                    <p class="title">Dépenses fixes :</p>
+                    <div>
+                        <label for="charges">Loyer et charges :</label>
+                        <input type="number" id="charges">
+                    </div>
+                    <div>
+                        <label for="credit">Remboursement de crédits :</label>
+                        <input type="number" id="credit">
+                    </div>
+                    <div>
+                        <label for="conso">Eau / Electricité / Gaz :</label>
+                        <input type="number" id="conso">
+                    </div>
+                    <div>
+                        <label for="box">Téléphone / internet / tv :</label>
+                        <input type="number" id="box">
+                    </div>
+                    <div>
+                        <label for="home">Assurance habitation :</label>
+                        <input type="number" id="home">
+                    </div>
+                </div>
+                <div id="occasional">
+                    <p class="title">Dépenses courantes :</p>
+                    <div>
+                        <label for="shop">Courses :</label>
+                        <input type="number" id="shop">
+                    </div>
+                    <p class="title">Dépenses occasionnelles :</p>
+                    <div>
+                        <label for="sortie">Sortie :</label>
+                        <input type="number" id="sortie">
+                    </div>
+                    <div>
+                        <label for="otherOut">Autres :</label>
+                        <input type="number" id="otherOut">
+                    </div>
+                </div>
+                <button id="addOutlays">valider</button>
+                <div class="total" id="addOutlay"></div>
+            </div>
+        </div>
+        <div id="part2">
+            <div class="part">
+                <p class="title">EPARGNE</p>
+                <div id="moneySaved">
+                    <label for="save">Epargne :</label>
+                    <input type="number" id="save">
+                </div>
+            </div>
+            <div class="part">
+                <p class="title">RESULTAT</p>
+                <button id="overall">total</button>
+                <div class="total" id="result"></div>
+            </div>
+        </div>
     </div>
+    <button id="reset">RESET</button>
 </body>
 </html>
