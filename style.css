@@ -30,7 +30,7 @@ body {
     font-size: 1.5rem;
 }
 
-.title {
+.title, .total {
     font-weight: bold;
     margin: 1rem;
 }
@@ -39,7 +39,7 @@ input {
     width: 5rem;
 }
 
-#fixed, #occasional, #moneyIncome, #moneySaved {
+#moneyIncome, #fixed, #occasional, #moneySaved {
     text-align: right;
 }
 
