@@ -1,3 +1,6 @@
+// import de la fenêtre modale
+import {ModWin} from "./appModWin";
+
 // get incomes
 let incomes = document.getElementById('moneyIncome').getElementsByTagName("input");
 let tIn = 0;
@@ -11,11 +14,17 @@ let save = document.getElementById('save');
 
 let overall = document.getElementById('overall');
 
+let message = new ModWin('blue', 'white');
+message.open('Entrez uniquement des chiffres.');
+console.log(message.open());
+
 overall.addEventListener('click', function (){
+
+
     // calculate total incomes
     for (let i = 0 ; i < incomes.length ; i++){
         if(Number.isNaN(parseInt(incomes[i].value))){
-            incomes[i].value = '0';
+
         }
         else {
             tIn += parseInt(incomes[i].value);
@@ -27,7 +36,6 @@ overall.addEventListener('click', function (){
     // calculate total outlay
     for (let o = 0 ; o < outlay.length ; o++){
         if(Number.isNaN(parseInt(outlay[o].value))){
-            // alert('Dépenses : Entrez des valeurs chiffrées')
             outlay[o].value = '0';
         }
         else {
@@ -58,3 +66,4 @@ reset.addEventListener('click', function (){
     }
     save.value = 0;
 })
+
